@@ -6,11 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	console.log(`book list parent node: ${bookList.parentNode}`);
 
 	console.log(`all node children: ${Array.from(bookList.childNodes)}`);
+	console.log(Array.from(bookList.childNodes));
 	Array.from(bookList.childNodes).forEach(function(node) {
 		console.log(node);
 	});
 
 	console.log(`all element children ${Array.from(bookList.children)}`);
+	console.log(Array.from(bookList.children));
 	Array.from(bookList.children).forEach(function(node) {
 		console.log(node);
 	});
