@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	const panels = document.querySelectorAll('.panel');
 	tabs.addEventListener('click', function(e) {
 		if (e.target.tagName == 'LI') {
-			console.log(panels);
 			const targetPanel = document.querySelector(e.target.dataset.target);
 			Array.from(panels).forEach(function(panel) {
 				if (panel === targetPanel) {
