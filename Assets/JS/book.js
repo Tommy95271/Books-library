@@ -14,11 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 
 	const forms = document.forms;
-	console.log(forms);
-	console.log(forms['add-book']);
-	Array.from(forms).forEach(function(form) {
-		console.log(form);
-	});
 
 	const addForm = forms['add-book'];
 	addForm.addEventListener('submit', function(e) {
