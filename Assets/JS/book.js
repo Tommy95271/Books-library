@@ -9,4 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	Array.from(bookList.childNodes).forEach(function(node) {
 		console.log(node);
 	});
+
+	console.log(`all element children ${Array.from(bookList.children)}`);
+	Array.from(bookList.children).forEach(function(node) {
+		console.log(node);
+	});
 });
