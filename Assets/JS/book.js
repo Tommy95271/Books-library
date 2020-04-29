@@ -20,5 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		e.preventDefault();
 		const value = addForm.querySelector('input[type="text"]').value;
 		console.log(value);
+		const li = document.createElement('li');
+		const bookName = document.createElement('span');
+		const deleteBtn = document.createElement('span');
+
+		bookName.textContent = value;
+		deleteBtn.textContent = 'delete';
+
+		bookName.classList.add('name');
+		deleteBtn.classList.add('delete');
+
+		li.appendChild(bookName);
+		li.appendChild(deleteBtn);
+		list.append(li);
 	});
 });
