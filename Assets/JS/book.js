@@ -16,4 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	Array.from(bookList.children).forEach(function(node) {
 		console.log(node);
 	});
+
+	const titles = document.querySelectorAll('.name');
+	console.log(`${titles}`);
+	console.log(titles);
+	console.log(`Book titles ${titles}`);
+	console.log('Bookd titles' + titles);
+	Array.from(titles).forEach(function(title) {
+		console.log(title);
+	});
 });
