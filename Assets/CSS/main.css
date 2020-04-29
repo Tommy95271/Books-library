@@ -141,6 +141,11 @@ h2 {
 	line-height: 52px;
 }
 
+.hide {
+	opacity: 0;
+	height: 0;
+}
+
 /*
 #tabbed-content li{
     display: inline-block;

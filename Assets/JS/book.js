@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	hideBox.addEventListener('change', function(e) {
 		if (hideBox.checked) {
 			list.style.display = 'none';
+			// list.classList.add('hide');
 		} else {
 			list.style.display = 'initial';
 		}
