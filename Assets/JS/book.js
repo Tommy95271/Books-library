@@ -1,13 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-	var bookList = document.getElementById('book-list');
-	var titles = document.getElementsByClassName('name');
-	console.log(bookList, titles);
-	var titles2 = document.querySelectorAll('#book-list li .name');
-	console.log(titles2);
-	Array.from(titles).forEach(function(title) {
-		console.log(title);
-	});
-	titles2.forEach(function(title) {
-		console.log(title);
-	});
+	const bookList = document.querySelector('#book-list');
+	console.log(`book list node type: ${bookList.nodeType}`);
+	console.log(`book list node name: ${bookList.nodeName}`);
+	console.log(`book list parent element: ${bookList.parentElement}`);
+	console.log(`book list parent node: ${bookList.parentNode}`);
 });
