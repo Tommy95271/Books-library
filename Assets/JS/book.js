@@ -48,4 +48,19 @@ document.addEventListener('DOMContentLoaded', function() {
 			list.style.display = 'initial';
 		}
 	});
+
+	// filter books
+	const searchBar = forms['search-books'].querySelector('input');
+	searchBar.addEventListener('keyup', function(e) {
+		const term = e.target.value.toLowerCase();
+		const books = document.querySelectorAll('#book-list li');
+		Array.from(books).forEach(function(book) {
+			const title = book.firstElementChild.textContent;
+			if (title.toLowerCase().indexOf(term) !== -1) {
+				book.style.display = 'flex';
+			} else {
+				book.style.display = 'none';
+			}
+		});
+	});
 });
