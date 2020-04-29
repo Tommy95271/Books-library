@@ -9,4 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			li.parentElement.removeChild(li);
 		});
 	});
+
+	//prevent default behavior
+
+	const link = document.querySelector('#page-banner a');
+	console.log(link);
 });
