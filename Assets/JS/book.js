@@ -7,4 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	Array.from(titles).forEach(function(title) {
 		console.log(title);
 	});
+	titles2.forEach(function(title) {
+		console.log(title);
+	});
 });
