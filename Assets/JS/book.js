@@ -4,4 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	console.log(bookList, titles);
 	var titles2 = document.querySelectorAll('#book-list li .name');
 	console.log(titles2);
+	Array.from(titles).forEach(function(title) {
+		console.log(title);
+	});
 });
